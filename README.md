@@ -62,6 +62,13 @@ s3://dataforgood-fb-data/forests/v1/models/
 
 ### Data
 
+To prepare the data, in the cloned repository, run these commands:
+```
+aws s3 --no-sign-request cp --recursive s3://dataforgood-fb-data/forests/v1/models/ .
+unzip data.zip
+rm data.zip
+```
+
 Although our method is designed to work from satellite images, it can also estimate canopy height from aerial images.
 
 We share aerial images for the Neon test set we created for the paper in data.zip. 
