@@ -2,7 +2,7 @@
 
 **[Meta AI Research, FAIR](https://ai.facebook.com/research/)**
 
-##Setup
+## Setup
 
 Install Conda (https://docs.conda.io/projects/conda/en/latest/index.html#)
 
@@ -16,4 +16,6 @@ jupyter notebook
 ```
 
 Alternatively, create conda env from yaml file:
+```
 conda env create -f chm_demo.yml
+```
