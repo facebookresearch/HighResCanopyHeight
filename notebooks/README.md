@@ -10,8 +10,14 @@ Install Conda (https://docs.conda.io/projects/conda/en/latest/index.html#)
 ```
 conda create chm_demo
 conda activate chm_demo
+conda install torchvision
+conda install pytorch==2.0.1
+conda install conda-forge::pytorch-lightning
+conda install torchmetrics
 conda install geopandas jupyter rasterio boto3
 conda install fiona=1.9
+conda install scikit-image
+
 jupyter notebook
 ```
 
