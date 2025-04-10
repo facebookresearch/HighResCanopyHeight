@@ -8,15 +8,13 @@ Install Conda (https://docs.conda.io/projects/conda/en/latest/index.html#)
 
 ## Example of successful environment creation for notebooks
 ```
-conda create chm_demo
+conda create -n chm_demo python=3.9
 conda activate chm_demo
-conda install torchvision
-conda install pytorch==2.0.1
-conda install conda-forge::pytorch-lightning
-conda install torchmetrics
-conda install geopandas jupyter rasterio boto3
-conda install fiona=1.9
-conda install scikit-image
+conda install pytorch==2.0.1 -c pytorch
+conda install torchvision -c pytorch
+conda install conda-forge::pytorch-lightning==1.7
+conda install torchmetrics==0.11.4
+conda install geopandas jupyter rasterio boto3 scikit-image
 
 jupyter notebook
 ```
